@@ -1,13 +1,31 @@
 package com.example.EMSSpringBoot.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="employees")
 public class Employee {
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;
+
+    @Column(name = "first_name", nullable = false)
     private String firstName;
+
+    @Column(name = "last_name", nullable = false)
     private String lastName;
+
+    @Column(name = "company_name", nullable = false)
     private String companyName;
+
+    @Column(name = "phone_number", nullable = false)
     private long phoneNumber;
+    public Employee(){
+
+    }
 
     public Employee(String firstName, String lastName, String companyName, long phoneNumber) {
+        super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.companyName = companyName;
