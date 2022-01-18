@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class EmployeeServiceImplementation implements EmployeeService {
     @Override
-    public List<Employee> getAllStudents(){
+    public List<Employee> getAllEmployees(){
         return null;
     }
 }
