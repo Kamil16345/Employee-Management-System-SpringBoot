@@ -2,10 +2,9 @@ package com.example.EMSSpringBoot.repository;
 
 import com.example.EMSSpringBoot.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
+@Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 }
 
